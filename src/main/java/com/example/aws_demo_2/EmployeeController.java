@@ -57,4 +57,9 @@ public class EmployeeController {
         employeeDB.remove(id);
         return "Employee deleted with id " + id;
     }
+
+    @GetMapping("/test")
+    public String testApi() {
+        return "Swagger + Spring Boot is working!";
+    }
 }
